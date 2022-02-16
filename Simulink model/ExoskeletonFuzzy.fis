@@ -1,0 +1,43 @@
+[System]
+Name='ExoskeletonFuzzy'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=0
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='input1'
+Range=[0.1 2.2]
+NumMFs=4
+MF1='VN':'trimf',[0.1 0.1 0.8]
+MF2='NR':'trimf',[0.1 0.8 1.5]
+MF3='VFR':'trimf',[1.5 2.2 2.2]
+MF4='FR':'trimf',[0.8 1.5 2.2]
+
+[Input2]
+Name='input2'
+Range=[-90 90]
+NumMFs=5
+MF1='LT':'trimf',[-90 -90 -45]
+MF2='A':'trimf',[-45 0 45]
+MF3='RT':'trimf',[45 90 90]
+MF4='AL':'trimf',[-90 -45 0]
+MF5='ART':'trimf',[0 45 90]
+
+[Output1]
+Name='output1'
+Range=[-90 90]
+NumMFs=5
+MF1='LT':'trimf',[-90 -90 -45]
+MF2='A':'trimf',[-45 0 45]
+MF3='RT':'trimf',[45 90 90]
+MF4='AL':'trimf',[-90 -45 0]
+MF5='ART':'trimf',[0 45 90]
+
+[Rules]
