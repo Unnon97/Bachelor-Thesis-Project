@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1540134325 source:e:\coding\fuz_mam\main.cpp
+	<iostream>
+	<cmath>
+	<cstring>
+	<string>
+

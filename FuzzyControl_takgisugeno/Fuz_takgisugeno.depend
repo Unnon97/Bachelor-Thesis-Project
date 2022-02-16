@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1539955083 source:e:\coding\fuz_takgisugeno\main.cpp
+	<iostream>
+	<cmath>
+	<cstring>
+	<string>
+	<vector>
+
